@@ -1,0 +1,19 @@
+.ng-invalid.ng-dirty{
+  border-color: #ff000c;
+}
+.ng-valid.ng-dirty{
+  border-color: #78FA89;
+}
+
+
+
+label {
+	font-weight: bold;
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+
+
+  

@@ -1,0 +1,118 @@
+<body>
+	<div id="header"></div>
+	<div id="#top"></div>
+	<div id="home"  data-ng-controller="registerUserController">
+		<form>
+		<div class="container">
+			<h3>Create your account</h3>
+			<hr />
+			<div class="row">
+				<div class="col-sm-4">
+					
+						<label for="email">Email Address:</label> 
+						<input type="text" class="form-control input-sm" id="email" data-ng-model="register.email"
+							placeholder="abc.BMP@BookMyPacket.com">
+				</div>
+				<div class="col-sm-4">
+					<label for="password">Password:</label> 
+					<input type="password" class="form-control input-sm" id="password" data-ng-model="register.password"
+						placeholder=" Enter password">
+				</div>
+				<div class="col-sm-4">
+					<label for="repassword">Re-Enter Password:</label> 
+					<input type="password" class="form-control input-sm" id="repassword" data-ng-model="register.repassword"
+						placeholder="Re-Enter password">
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<div class="col-sm-4">
+					<label for="Fname">First Name:</label> 
+					<input type="text" data-ng-model="register.firstname"
+						class="form-control input-sm" id="Fname" placeholder="First Name">
+					<label for="department">Department:</label> 
+					<input type="text" data-ng-model="register.department"
+						class="form-control input-sm" id="department" placeholder="Department"> 
+					<label for="country">Country:</label>
+					<select class="form-control input-sm" id="country" data-ng-model="register.country"
+						placeholder="Select">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select> 
+					<label for="state">State/Province:</label> 
+					<select class="form-control input-sm" id="state" data-ng-model="register.state"
+						placeholder="State/Province">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select> <label for="otherphone">Other Phone:</label> <input type="text"
+						class="form-control input-sm" id="otherphone" data-ng-model="register.otherPhone"
+						placeholder="Other Phone">
+				</div>
+				<div class="col-sm-4">
+					<label for="Lname">Last Name:</label> 
+					<input type="text" data-ng-model="register.lastname"
+						class="form-control input-sm" id="Lname" placeholder="Last Name">
+					<label for="position">position:</label> 
+					<input type="text" data-ng-model="register.position"
+						class="form-control input-sm" id="position" placeholder="position">
+					<label for="pincode">Pin Code:</label> 
+					<select data-ng-model="register.pincode"
+						class="form-control input-sm" id="pincode" placeholder="Select">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select> 
+					<label for="address">Address:</label> 
+					<input type="text" data-ng-model="register.address"
+						class="form-control input-sm" id="address" placeholder="address">
+					<label for="mobile">Mobile:</label> 
+					<input type="text" data-ng-model="register.mobile"
+						class="form-control input-sm" id="mobile" placeholder="mobile no">
+				</div>
+				<div class="col-sm-4">
+					<label for="companyname">Company Name:</label> 
+					<input type="text" class="form-control input-sm" id="companyname" data-ng-model="register.companyName"
+						placeholder="company name"> 
+					<label for="business_industry">Business Industry:</label> 
+					<input type="text" class="form-control input-sm" data-ng-model="register.businessIndustry"
+						id="businessindustry" placeholder="business industry"> 
+					<label for="city">City:</label> 
+					<select class="form-control input-sm" data-ng-model="register.city"
+						id="city" placeholder="city">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select> 
+					<label for="phone">Phone:</label> 
+					<input type="text" data-ng-model="register.phoneNo"
+						class="form-control input-sm" id="phone" placeholder="phone no">
+					<br />
+					<button class="btn btn-large btn-block btn-primary" data-ng-click="registrationUser(register)" type="button">Resister</button>
+				</div>
+			</div>
+		</div>
+		</form>
+		<div id="commanbody"></div>
+		<script
+			src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<div id="footer"></div>
+		<script> 
+    $(function(){
+      $("#footer").load("helper/footer.html"); 
+      $("#header").load("helper/header.html");
+      $("#commanbody").load("helper/commanbody.html"); 
+    });
+    </script>
+		<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+	</div>
+</body>
